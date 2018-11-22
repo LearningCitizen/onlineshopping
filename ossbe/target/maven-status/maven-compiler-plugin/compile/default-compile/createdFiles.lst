@@ -1,1 +1,4 @@
-com\ja\ossbe\app\OssbeApplication.class
+com\ja\ossbe\entities\Product.class
+com\ja\ossbe\entities\Client.class
+com\ja\ossbe\OssbeApplication.class
+com\ja\ossbe\entities\Order.class
