@@ -16,6 +16,10 @@
 *.iml
 *.ipr
 
+#### Compiled Classes ###
+
+*.class
+
 ### NetBeans ###
 /nbproject/private/
 /build/

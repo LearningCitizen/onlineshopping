@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @Entity
@@ -19,4 +20,15 @@ public class Client implements Serializable {
     private String email;
     private String password;
 
+    @OneToMany(mappedBy = "client",cascade = CascadeType.ALL)
+    private List<Order> orders;
+
+    public List<Order> addOrder(Order order){
+        order.addClient(this);
+        orders.add(order);
+        return orders;
+    }
+
+    public Client() {
+    }
 }

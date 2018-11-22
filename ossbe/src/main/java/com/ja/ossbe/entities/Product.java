@@ -17,4 +17,6 @@ public class Product  implements Serializable {
     private Long quantity;
     private String name;
 
+    public Product() {
+    }
 }
