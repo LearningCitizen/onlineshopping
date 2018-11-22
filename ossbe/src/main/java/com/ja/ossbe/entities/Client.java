@@ -3,14 +3,12 @@ package com.ja.ossbe.entities;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Data
 @Entity
+@Table(name = "clients")
 public class Client implements Serializable {
 
     @Id
