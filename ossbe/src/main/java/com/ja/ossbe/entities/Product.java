@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @Entity
@@ -16,6 +17,8 @@ public class Product  implements Serializable {
     private String price;
     private Long quantity;
     private String name;
+    @OneToMany(mappedBy = "product",cascade = CascadeType.ALL)
+    private List<OrderProducts> ordersProducts;
 
     public Product() {
     }

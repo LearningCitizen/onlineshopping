@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 
 @Data
@@ -17,6 +18,8 @@ public class Order implements Serializable {
     @ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
     @JoinColumn(name = "client_id")
     private Client client;
+    @OneToMany(mappedBy = "order",cascade = CascadeType.ALL)
+    List<OrderProducts> ordersProducts;
 
     public void addClient(Client c){
         this.client = c;
