@@ -1,0 +1,25 @@
+header, footer, nav
+{
+  position: fixed;
+  width: 100%;
+}
+
+footer, nav
+{
+  height: 5%;
+  background-color: red;
+}
+header
+{
+  top: 0%;
+  height: 10%;
+  background-color: green;
+}
+nav
+{
+  top: 10%;
+}
+footer
+{
+  top: 95%;
+}
