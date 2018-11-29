@@ -1,4 +1,7 @@
 package com.ja.ossbe.services;
 
-public class ClientServices {
+import com.ja.ossbe.dao.ClientRepository;
+
+public class ClientServices  implements IClientServices{
+    private ClientRepository clientRepository;
 }
