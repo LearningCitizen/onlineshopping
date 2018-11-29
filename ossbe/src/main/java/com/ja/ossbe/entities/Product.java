@@ -1,5 +1,6 @@
 package com.ja.ossbe.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -10,12 +11,13 @@ import java.util.List;
 @Data
 @Entity
 //@Table(name = "products")
+@JsonIgnoreProperties("orders")
 public class Product  implements Serializable {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String type;
-    private String price;
+    private Double price;
     private Long quantity;
     private String name;
 

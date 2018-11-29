@@ -1,4 +1,14 @@
-C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\entities\Order.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\dao\ProductRepository.java
 C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\entities\Client.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\dao\OrderRepository.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\RestControllers\ProductController.java
 C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\entities\Product.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\entities\Order.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\dao\ClientRepository.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\services\ProductServices.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\services\ClientServices.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\services\IProductServices.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\services\OrderServices.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\services\IOrderSrvices.java
+C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\services\IClientServices.java
 C:\Users\elazh\eclipse-workspace\onlineshoppingstore\ossbe\src\main\java\com\ja\ossbe\OssbeApplication.java

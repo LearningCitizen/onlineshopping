@@ -1,0 +1,10 @@
+com\ja\ossbe\dao\ProductRepository.class
+com\ja\ossbe\services\IOrderSrvices.class
+com\ja\ossbe\services\IClientServices.class
+com\ja\ossbe\services\IProductServices.class
+com\ja\ossbe\RestControllers\ProductController.class
+com\ja\ossbe\dao\ClientRepository.class
+com\ja\ossbe\services\ClientServices.class
+com\ja\ossbe\services\ProductServices.class
+com\ja\ossbe\services\OrderServices.class
+com\ja\ossbe\dao\OrderRepository.class

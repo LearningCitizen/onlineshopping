@@ -1,4 +1,4 @@
 package com.ja.ossbe.services;
 
-public interface IOrderSrvices {
+public interface IOrderServices {
 }
