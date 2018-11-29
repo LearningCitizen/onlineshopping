@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -24,6 +25,9 @@ public class Client implements Serializable {
     private List<Order> orders;
 
     public List<Order> addOrder(Order order){
+        if (orders == null){
+            orders = new ArrayList<Order>();
+        }
         order.addClient(this);
         orders.add(order);
         return orders;

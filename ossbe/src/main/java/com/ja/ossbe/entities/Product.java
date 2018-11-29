@@ -4,6 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -17,6 +19,15 @@ public class Product  implements Serializable {
     private Long quantity;
     private String name;
 
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH},mappedBy = "products")
+    private List<Order> orders;
     public Product() {
+    }
+    public List<Order> addOrder(Order order){
+        if (orders == null){
+            orders = new ArrayList<Order>();
+        }
+        orders.add(order);
+        return orders;
     }
 }

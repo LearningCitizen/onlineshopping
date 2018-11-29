@@ -4,6 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Data
@@ -18,6 +20,18 @@ public class Order implements Serializable {
     @JoinColumn(name = "client_id")
     private Client client;
 
+    @ManyToMany(fetch = FetchType.LAZY,cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
+    @JoinTable(joinColumns = @JoinColumn(name = "order_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
+    private List<Product> products;
+
+
+    public List<Product> addProduct(Product product){
+        if (products == null){
+            products = new ArrayList<Product>();
+        }
+        products.add(product);
+        return products;
+    }
     public void addClient(Client c){
         this.client = c;
     }
