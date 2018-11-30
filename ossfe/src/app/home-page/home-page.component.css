@@ -10,6 +10,17 @@
 #divDescription
 {
   margin-top : 2%;
-  width: 30%;
   padding: 1%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.width30
+{
+  width: 30%;
+}
+
+#imgDescription
+{
+  width: 100%;
 }
