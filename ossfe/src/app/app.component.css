@@ -4,16 +4,26 @@ header, footer, nav
   width: 100%;
 }
 
+h1{
+  height: 80%;
+  display: inline;
+  margin: auto;
+  font-family:  'Tangerine', cursive;
+}
 footer, nav
 {
   height: 5%;
-  background-color: red;
+}
+
+.textAlignCenter
+{
+  text-align: center;
 }
 header
 {
   top: 0%;
   height: 10%;
-  background-color: green;
+  display: inline;
 }
 nav
 {
@@ -22,4 +32,9 @@ nav
 footer
 {
   top: 95%;
+}
+header img
+{
+  height: 80%;
+  display: inline;
 }

@@ -1,6 +1,11 @@
-<header>Amazonia</header>
-<nav>
-  <a routerLink="/home" routerLinkActive="active">home</a>
+<header class="textAlignCenter">
+  <img src="../assets/images/icon_app.png" alt="icon app" class="w3-image">
+  <h1>Amazonia</h1>
+</header>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+  <ul class="navbar-nav">
+    <li class="nav-item active"><a class="nav-link" routerLink="/home" routerLinkActive="active">home</a></li>
+  </ul>
 </nav>
 <router-outlet></router-outlet>
-<footer>Copyright © 2018 Amazonia.com</footer>
+<footer class="textAlignCenter bg-dark text-white">Copyright © 2018 Amazonia.com</footer>
