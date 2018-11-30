@@ -10,7 +10,6 @@ import java.util.List;
 
 @Data
 @Entity
-//@Table(name = "clients")
 public class Client implements Serializable {
 
     @Id
@@ -28,11 +27,28 @@ public class Client implements Serializable {
         if (orders == null){
             orders = new ArrayList<Order>();
         }
-        order.addClient(this);
         orders.add(order);
         return orders;
     }
 
     public Client() {
+    }
+
+    public Client(String firstName, String lastName, String email, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

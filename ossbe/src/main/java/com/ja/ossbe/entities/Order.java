@@ -24,6 +24,7 @@ public class Order implements Serializable {
     @JoinTable(joinColumns = @JoinColumn(name = "order_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
     private List<Product> products;
 
+    public Order(){}
 
     public List<Product> addProduct(Product product){
         if (products == null){
@@ -32,10 +33,27 @@ public class Order implements Serializable {
         products.add(product);
         return products;
     }
-    public void addClient(Client c){
-        this.client = c;
+    public List<Product> addProduct( List<Product>  product){
+        if (products == null){
+            products = new ArrayList<Product>();
+        }
+        products.addAll(product);
+        return products;
     }
 
-    public Order() {
+    public void addClient(Client c){
+        this.client = c;
+        c.addOrder(this);
     }
+
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", client=" + client +
+                ", products=" + products +
+                '}';
+    }
+
 }

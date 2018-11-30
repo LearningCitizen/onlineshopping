@@ -32,4 +32,22 @@ public class Product  implements Serializable {
         orders.add(order);
         return orders;
     }
+
+    public Product(String type, Double price, Long quantity, String name) {
+        this.type = type;
+        this.price = price;
+        this.quantity = quantity;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", type='" + type + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

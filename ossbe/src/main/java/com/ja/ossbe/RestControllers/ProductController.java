@@ -2,6 +2,7 @@ package com.ja.ossbe.RestControllers;
 
 import com.ja.ossbe.entities.Order;
 import com.ja.ossbe.entities.Product;
+import com.ja.ossbe.services.App;
 import com.ja.ossbe.services.IProductServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,9 +14,12 @@ import java.util.List;
 public class ProductController {
     @Autowired
     private IProductServices productServices;
+    @Autowired
+    App app;
 
     @GetMapping("/")
     public List<Product> getProducts(){
+        app.myApp();
         return productServices.getAllProducts();
     }
 
