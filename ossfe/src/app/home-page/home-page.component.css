@@ -1,0 +1,26 @@
+.mainDiv
+{
+  position: fixed;
+  top: 15%;
+  height: 80%;
+  width: 100%;
+
+}
+
+#divDescription
+{
+  margin-top : 2%;
+  padding: 1%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.width30
+{
+  width: 30%;
+}
+
+#imgDescription
+{
+  width: 100%;
+}

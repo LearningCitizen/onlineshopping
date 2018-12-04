@@ -1,0 +1,40 @@
+header, footer, nav
+{
+  position: fixed;
+  width: 100%;
+}
+
+h1{
+  height: 80%;
+  display: inline;
+  margin: auto;
+  font-family:  'Tangerine', cursive;
+}
+footer, nav
+{
+  height: 5%;
+}
+
+.textAlignCenter
+{
+  text-align: center;
+}
+header
+{
+  top: 0%;
+  height: 10%;
+  display: inline;
+}
+nav
+{
+  top: 10%;
+}
+footer
+{
+  top: 95%;
+}
+header img
+{
+  height: 80%;
+  display: inline;
+}
